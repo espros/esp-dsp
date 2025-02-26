@@ -1,0 +1,7 @@
+# Copyright (c) 2025 espros photonics co. <armin.kessler@espros.com>
+# SPDX-License-Identifier: Apache-2.0
+
+name: esp-dsp
+build:
+  cmake-ext: True
+  kconfig-ext: True
