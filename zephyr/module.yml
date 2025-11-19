@@ -3,5 +3,5 @@
 
 name: esp-dsp
 build:
-  cmake-ext: True
-  kconfig-ext: True
+  cmake: zephyr/
+  kconfig: zephyr/Kconfig

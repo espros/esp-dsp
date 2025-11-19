@@ -1,0 +1,27 @@
+# Copyright (c) 2025 espros photonics co.
+# SPDX-License-Identifier: Apache-2.0
+
+config ZEPHYR_ESP_DSP_MODULE
+        bool
+
+menuconfig ESP_DSP
+        bool "ESP-DSP Library Support"
+        help
+          This option enables the ESP-DSP library.
+
+if ESP_DSP
+
+config DSP_OPTIMIZED
+        bool "optimize dsp functions"
+        default 1
+        help
+          If enabled use assembly optimized dsp functions
+
+comment "Components"
+config ESP_DSP_BASICMATH
+        bool "Basic Math Functions"
+        help
+          This option enables the Basic Math Functions, which support the
+          following operations:
+
+endif # ESP_DSP
